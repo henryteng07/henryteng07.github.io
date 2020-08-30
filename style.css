@@ -1,0 +1,372 @@
+body {
+    padding: 0;
+}
+.container {
+    max-width: 960px;
+  }
+  
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+.fab {
+  font-size: 50px;
+  padding: 30px 40px 20px 20px;
+}
+
+
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header-logo {
+      width: 40px;
+      display: inline-block;
+  }
+
+  .site-header {
+    background-color: white;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    font-size: 1.2rem;
+  }
+  .site-header a {
+    color: black;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    /* color: #fff; */
+    text-decoration: underline;
+  }
+  
+  
+  .pt-2, .py-2 {
+      padding-top: 1.2rem !important;
+  }
+  
+  .pb-2, .py-2 {
+      padding-bottom: 1.2rem !important;
+  }
+
+  .link {
+      padding-top: 1.6rem !important;
+  }
+  /*
+   * Extra utilities
+   */
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+  .flex-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+
+  /* HOME FIRST PAGE */
+  #home-bg {
+      /* background-image: url(images/home-background.png); */
+      background: linear-gradient( rgba(0,0,0,0.25), rgba(0, 0, 0, 0.25) ),url(images/home-background.png) no-repeat;
+      background-size: cover;
+      height: 650px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding-top: 200px;
+  }
+
+  @font-face {
+    font-family: 'C_Cake';
+    src: url('Beauty&Beast.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.title {
+  font-family: 'C_Cake';
+  font-size: 4.5rem;
+  color: white;
+  /* border-bottom: 5px solid #cdecda; */
+}
+
+.title-underline {
+    border-bottom: 5px solid #cdecda;
+}
+
+.sub-title {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  padding-top: 40px;
+}
+
+  .home-lady {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    /* display: inline-block; */
+}
+
+/* HOME SECOND PAGE */
+  #home-28 {
+    /* max-height: 600px; */
+    /* background-color: bisque; */
+    padding: 8% 10%;
+  }
+
+  #home-28 p {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+
+  #home-28 h2 {
+    font-size: 2rem;
+  }
+
+  #home-28 h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .circle-28 {
+    /* background:#a2b55d; */
+    background: #acc161;
+    border-radius: 50%;
+    color:whitesmoke;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  /* HOME THIRD PAGE */
+
+  #link-menu .row {
+    /* padding: 20px; */
+    text-align: center;
+    /* max-height: 400px; */
+  }
+
+  #link-menu .link {
+    border: 1px solid #fff;
+    padding: 20px;
+    color: white;
+  }
+
+  #link-menu a {
+    color: white;
+    transition: ease-in-out color .15s;
+  }
+
+  .about {
+    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image1.png) no-repeat;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 150px 70px;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .coaching {
+    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image2.png) no-repeat;
+    background-repeat: no-repeat;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 150px 70px;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .get-in-touch {
+    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image3.png) no-repeat;
+    background-repeat: no-repeat;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 150px 70px;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+
+    .m-md-3 {
+        margin: 0 !important;
+    }
+  }
+
+  
+  .overflow-hidden { overflow: hidden; }
+
+/* ABOUTME FIRST PAGE */
+.about-me {
+  width: 100%;
+  margin-top: 10px;
+}
+.my-image {
+  width: 250px;
+  margin: 40px 0 0 160px;
+  float: left;
+  display: block;
+}
+
+.text-content {
+  margin: 20px 75px 0 50px;
+  padding-right: 150px;
+  display:block;
+  top: 40px;
+  left: 40px;
+  position: relative;
+}
+
+.text-content-h1 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+/* .btn {
+  margin-left: 40px;
+  margin-top: 50px;
+} */
+
+  
+/* OURPROG FIRST PAGE */
+#ourprog-intro {
+   max-height: 400px;
+    /* background-color: #AEDECA; */
+    background-color: #cdecda;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#ourprog-intro h1 {
+  position: absolute;
+  padding: 80px 0 20px 100px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+
+#ourprog-intro button {
+  position: absolute;
+  margin: 200px 0 0 100px;
+}
+
+#ourprog-why {
+  padding: 20px 70px;
+}
+.intro-img {
+  width: 50%;
+  position: relative;
+  top: 0;
+  right: 0;
+  float: right;
+}
+
+/* OURPROG THIRD PAGE */
+
+#home-types {
+    max-height: 600px;
+    background-color: white;
+    padding: 5% 10%;
+    margin-bottom: 50px;
+  }
+
+  #home-types h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .types {
+    padding-bottom: 50px;
+  }
+  .types h3 {
+    text-align: center;
+  }
+  .circle1 {
+    background: #deb3c3;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto 20px;
+  }
+
+  .circle2 {
+    background: #c5899f;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto 20px;
+  }
+
+/* FORM */
+.form-signin {
+  padding: 0 9%;
+  margin-top: 50px;
+  display: block;
+}
+
+.form-control {
+  height: 75px;
+  padding: 0 40px;
+}
+
+.main-page-dijit {
+  width: 100%;
+  padding: 27px 40px;
+}
+
+.form-label-group {
+  margin: 10px 1.5px;
+}
+
+/* .selectpicker {
+  padding: 15px 29px !important;
+  height: 60px !important;
+} */
+
+.bootstrap-select {
+  width: 100% !important;
+}
+
+.dropdown-toggle {
+  height: 75px;
+  padding: 25px 40px;
+}
+
+.user-message {
+  height: 150px;
+}
+
+.home-form {
+  padding: 30px 0;
+  display: block;
+}
