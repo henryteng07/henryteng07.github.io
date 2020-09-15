@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>28 Day Nutrition</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d9a5e18a5a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="site-header py-1">
+    <!-- <nav class="site-header py-1">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
+        <a class="navbar-brand" href="#">
             <img class="site-header-logo" src="images/logov2.png" alt="">
         </a>
-        <a class="py-2 d-none d-md-inline-block link" href="index.html">Home</a>
-        <a class="py-2 d-none d-md-inline-block link" href="about-me.html">About</a>
-        <a class="py-2 d-none d-md-inline-block link" href="ourprog.html">28 Days</a>
-        <a class="py-2 d-none d-md-inline-block link" href="#">Sign Up</a>
-        <a class="py-2 d-none d-md-inline-block link" href="#">Blog</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="py-2 d-none d-md-inline-block link nav-link" href="home.html">Home</a></li>
+          <a class="py-2 d-none d-md-inline-block link" href="about-me.html">About</a>
+          <a class="py-2 d-none d-md-inline-block link" href="ourprog.html">28 Days</a>
+          <a class="py-2 d-none d-md-inline-block link" href="signup.html">Sign Up</a>
+          <a class="py-2 d-none d-md-inline-block link" href="#">Blog</a>
+        </ul>
+          </div>
+      </div>
+    </nav> -->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light site-header">
+
+      <a class="navbar-brand" href=""><img class="site-header-logo" src="/images/logov2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="home.html">Home</a>
+          <a class="nav-item nav-link" href="about-me.html">About</a>
+          <a class="nav-item nav-link" href="ourprog.html">28 Days</a>
+          <a class="nav-item nav-link" href="signup.html">Sign Up</a>
+          <a class="nav-item nav-link" href="blog.html">Blog</a>
+        </div>
       </div>
     </nav>
+  </div>
 
     <div id="home-bg">
         <!-- <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center"> -->
        <div class="title"><span class="title-underline">EXPERIENCE A NEW YOU</span></div><br>
        <div class="sub-title">HEALTH : NUTRITION : LIFESTYLE</div>
-
-        <!-- <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">Punny headline</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
-        <!-- </div> -->
-    <!-- </div> -->
     </div>
 
     <div id="home-28">
@@ -48,7 +65,7 @@
         </div>
 
        <div class="col-lg-6 col-md-6 col-sm-12">
-        <img style="width: 100%;" src="images/background-half.png" alt="">
+        <img src="images/background-half.png" alt="">
          <!-- <h3>FOR A NEW YOU</h3>
          <p>In less than a month, experience lasting results with a program of supplements specially tailored for your needs. The program incorporates nutritional cleansing as well as targeted essential nutrition so you can rest assured you have everything you need to live your best life.</p> -->
         </div>
@@ -59,21 +76,23 @@
       <div id="link-menu">
         <div class="row">
   
-          <div class="col-lg-4 col-md-4 col-sm-12 about">
+          <div class="col-lg-4 col-md-4 col-sm-12 about template">
               <div class="link"><a href="about-me.html">ABOUT ME</a></div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 coaching">
+          <div class="col-lg-4 col-md-4 col-sm-12 coaching template">
             <div class="link"><a href="ourprog.html">28 DAY PROGRAM</a></div>
         
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 get-in-touch">
+          <div class="col-lg-4 col-md-4 col-sm-12 get-in-touch template">
             <div class="link"><a href="about-me.html#support">SUPPORT & ACCOUNTABILITY</a></div>
           </div>
         
         </div>
       </div>
+
+
 
       <div class="home-form">
         <form action="/" class="form-signin" method="post">      
@@ -93,7 +112,7 @@
 
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" name="eml" placeholder="Your Email" required autofocus>
+              <input type="email" id="inputEmail" class="form-control" name="eml" placeholder="Your Email" required>
               <!-- <label for="inputEmail">Email address</label> -->
             </div>
           </div>
@@ -104,25 +123,28 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="form-label-group">
-            <input type="tel" id="inputNumber" class="form-control" name="num" placeholder="Your Number" required autofocus>
+            <input type="tel" id="inputNumber" class="form-control" name="num" placeholder="Your Number" required>
           </div>
         </div>
 
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="form-label-group">
+        <div class="form-label-group form-input">
 
-          <!-- <select id="test-multiselect" name="test-multiselect" dropdown="true" multiple="true" labeltext="Select options" data-dojo-type="dojox/form/CheckedMultiSelect">
-            <option value="1">Option 1</option> 
-            <option value="2">Option 2</option> 
-            <option value="3">Option 3</option> 
-          </select> -->
-
-          <select class="selectpicker" multiple title="I'm interested in" name="usermultiselect">
+          <select class="form-control" name="usermultiselect" id="FormControlSelect">
+            <option value="">I'm interested in</option> 
+            <option value="Weight Loss">Weight Loss</option> 
+            <option value="Muscle Mass">Muscle Gain</option> 
+            <option value="Increase Energy">Increasing Energy</option> 
+            <option value="Improve Sleep">Improving Sleep</option>
+          </select>
+    
+  
+          <!-- <select class="selectpicker" multiple title="I'm interested in" name="usermultiselect">
             <option>Weight Loss</option>
               <option>Muscle Mass</option>
               <option>Increase Energy</option>
               <option>Improve Sleep</option>
-          </select>
+          </select> -->
     
 
         </div>
@@ -131,25 +153,24 @@
     </div>
 
       <div class="form-label-group">
-        <input type="text" id="inputText" class="form-control user-message" name="txt" placeholder="Your Message (Optional)" required autofocus>
+        <input type="text" id="inputText" class="form-control user-message" name="txt" placeholder="Your Message (Optional)" required>
         <!-- <label for="inputEmail">Email address</label> -->
       </div>
     
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      <button class="btn btn-lg btn-primary btn-block form-btn" type="submit">Sign up</button>
       <p class="mt-5 mb-3 text-muted text-center">&copy; 2020-2021</p>
 
     </form>
   </div>
 
       <div class="footer">
-        <i class="fab fa-facebook"></i>        
+        <a href="https://www.facebook.com/shakeitupmumma" target="_blank"><i class="fab fa-facebook"></i></a>        
         <a href="https://www.instagram.com/shakeitupmumma/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
       
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
 </body>
 
