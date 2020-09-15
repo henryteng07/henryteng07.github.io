@@ -6,30 +6,41 @@
     <title>28 Day Nutrition</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="site-header py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <a class="py-2" href="#">
-              <img class="site-header-logo" src="images/logov2.png" alt="">
-          </a>
-          <a class="py-2 d-none d-md-inline-block link" href="index.html">Home</a>
-          <a class="py-2 d-none d-md-inline-block link" href="about-me.html">About</a>
-        <a class="py-2 d-none d-md-inline-block link" href="ourprog.html">28 Days</a>
-        <a class="py-2 d-none d-md-inline-block link" href="#">Sign Up</a>
-        <a class="py-2 d-none d-md-inline-block link" href="#">Blog</a>
-      </nav>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light site-header">
+
+      <a class="navbar-brand" href=""><img class="site-header-logo" src="/images/logov2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="home.html">Home</a>
+          <a class="nav-item nav-link" href="about-me.html">About</a>
+          <a class="nav-item nav-link" href="ourprog.html">28 Days</a>
+          <a class="nav-item nav-link" href="signup.html">Sign Up</a>
+          <a class="nav-item nav-link" href="blog.html">Blog</a>
+        </div>
+      </div>
+    </nav>
+  </div>
 
       <div id="ourprog-intro">
-        <div class="title" style="font-size: 4rem; color: black;">A HEALTHIER YOU<br>STARTING TODAY!</div>
-        <button type="button" class="btn btn-danger btn-lg">SIGN UP</button>
-        <img class="intro-img" src="images/ourprog-intro.png" alt="">
+        <div class="title" style="font-size: 4rem; color: black;">A healthier you<br>starts today!</div>
+        <button type="button" class="btn btn-lg">SIGN UP</button>
+        <img class="intro-img" src="/images/ourprog-intro.png" alt="">
       </div>
 
 
       <div id="ourprog-why">
-        <h1>Why the 28 day program?</h1>
+        <h1>What is the 28 day program?</h1>
         <p>The #NEWYOUPROGRAM28 is an easy to follow simple system which is
           all about fueling with the best nutrition to build strong lean healthy bodies
           no matter what stage of life you are in.
@@ -41,9 +52,9 @@
           
           You will receive:
           <ul>
-            <li>👊 Your own personal coach</li>
-            <li>👊 Nutrition & health education</li>
-            <li>👊 Support & accountability</li>
+            <li>👊  Your own personal coach</li>
+            <li>👊  Nutrition & health education</li>
+            <li>👊  Support & accountability</li>
           </ul>
           
           
@@ -60,19 +71,19 @@
       <h2>WHAT CAN OUR PROGRAM HELP WITH?</h2>
       <div class="row types">
 
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="circle2"><img style="width: 90%;"src="images/weight-loss.png" alt=""></div>
+        <div class="col-lg-4 col-md-4 col-sm-12 card">
+          <div class="circle2"><img style="width: 90%;"src="/images/weight-loss.png" alt=""></div>
           <h3>Weight Loss</h3>
           <p>Experience a lighter you, without exercise!</p>
         </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="circle1"><img style="width:60%" src="images/stress.png" alt=""></div>
+        <div class="col-lg-4 col-md-4 col-sm-12 card">
+          <div class="circle1"><img style="width:60%" src="/images/stress.png" alt=""></div>
           <h3>Stress</h3>
           <p>Feel less moody and get a good night's sleep</p>
         </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 card">
           <div class="circle2"></div>
           <h3>Poor Sleep</h3>
           <p>Get a good night's sleep you know you deserve!</p>
@@ -82,26 +93,30 @@
 
       <div class="row types">
 
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="circle1"><img style="width: 80%" src="images/muscle.png" alt=""></div>
+        <div class="col-lg-4 col-md-4 col-sm-12 card">
+          <div class="circle1"><img style="width: 80%" src="/images/muscle.png" alt=""></div>
           <h3>Build Muscle</h3>
           <p>Experience a lighter you, without exercise!</p>
         </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="circle2"><img style="width: 65%;"src="images/gut-health.png" alt=""></div>
+        <div class="col-lg-4 col-md-4 col-sm-12 card">
+          <div class="circle2"><img style="width: 65%;"src="/images/gut-health.png" alt=""></div>
           <h3>Gut Health</h3>
           <p>Heal acid reflux, heartburn or indigestion</p>
         </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="circle1"><img style="width: 80%;"src="images/immune-system.png" alt=""></div>
+        <div class="col-lg-4 col-md-4 col-sm-12 card">
+          <div class="circle1"><img style="width: 80%;"src="/images/immune-system.png" alt=""></div>
           <h3>Immune System</h3>
           <p>Less flu-like symptons and more play!</p>
         </div>
 
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>

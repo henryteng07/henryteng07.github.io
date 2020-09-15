@@ -10,23 +10,32 @@
 </head>
 <body>
 
-    <nav class="site-header py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <a class="py-2" href="#">
-              <img class="site-header-logo" src="images/logov2.png" alt="">
-          </a>
-          <a class="py-2 d-none d-md-inline-block link" href="index.html">Home</a>
-          <a class="py-2 d-none d-md-inline-block link" href="about-me.html">About</a>
-          <a class="py-2 d-none d-md-inline-block link" href="ourprog.html">28 Days</a>
-          <a class="py-2 d-none d-md-inline-block link" href="#">Sign Up</a>
-          <a class="py-2 d-none d-md-inline-block link" href="#">Blog</a>
-        </div>
-      </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light site-header">
+    
+          <a class="navbar-brand" href=""><img class="site-header-logo" src="/images/logov2.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="home.html">Home</a>
+              <a class="nav-item nav-link" href="about-me.html">About</a>
+              <a class="nav-item nav-link" href="ourprog.html">28 Days</a>
+              <a class="nav-item nav-link" href="signup.html">Sign Up</a>
+              <a class="nav-item nav-link" href="blog.html">Blog</a>
+            </div>
+          </div>
+        </nav>
+      </div>
 
     <div id="about-me">
-        <div class="image">
-            <img class="my-image" src="images/sharon.jpg" alt="picture of sharon">
-        </div>
+
+      <div class="image">
+        <img class="my-image" src="/images/sharon.jpg" alt="picture of sharon">
+    </div>
+
         <div class="text-content">
             <h1 class="text-content-h1"><span class="title-underline">HELLO! I'M SHARON;</span></h1>
             <p>
@@ -67,8 +76,14 @@ I do not believe in diets or vigorous exercise – I believe in holistic health,
                     Nothing needs to happen overnight or with so much pressure it becomes too much, unattainable or unenjoyable which is why I would LOVE to be a part of your journey to support, encourage and guide you each day!
                     </p>
         </div>
+
+
+
     </div>
     <button type="button" class="btn btn-lg btn-outline-secondary"><a href="https://shakeitupmumma.isagenix.com/">ENTER</a></button>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

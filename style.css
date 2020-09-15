@@ -1,9 +1,6 @@
 body {
     padding: 0;
 }
-.container {
-    max-width: 960px;
-  }
   
 .footer {
   width: 100%;
@@ -21,18 +18,20 @@ body {
    */
   
   .site-header-logo {
-      width: 40px;
+      width: 45px;
       display: inline-block;
+      margin-left: 20px;
   }
 
   .site-header {
     background-color: white;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: 1.2rem 0;
   }
   .site-header a {
-    color: black;
+    color: black !important;
     transition: ease-in-out color .15s;
   }
   .site-header a:hover {
@@ -51,6 +50,11 @@ body {
 
   .link {
       padding-top: 1.6rem !important;
+      margin: 0 50px;
+  }
+
+  .nav-item {
+    margin: 0 50px;
   }
   /*
    * Extra utilities
@@ -69,10 +73,9 @@ body {
 
   /* HOME FIRST PAGE */
   #home-bg {
-      /* background-image: url(images/home-background.png); */
-      background: linear-gradient( rgba(0,0,0,0.25), rgba(0, 0, 0, 0.25) ),url(images/home-background.png) no-repeat;
+      background: linear-gradient( rgba(0,0,0,0.25), rgba(0, 0, 0, 0.25) ),url(/images/home-background.png) no-repeat;
       background-size: cover;
-      height: 650px;
+      height: 680px;
       position: relative;
       overflow: hidden;
       text-align: center;
@@ -92,6 +95,7 @@ body {
   font-size: 4.5rem;
   color: white;
   /* border-bottom: 5px solid #cdecda; */
+  display: inline-block;
 }
 
 .title-underline {
@@ -135,6 +139,11 @@ body {
     font-weight: 700;
     font-size: 2rem;
   }
+
+  #home-28 img {
+    width: 100%; 
+    height: 100%;
+  }
   .circle-28 {
     /* background:#a2b55d; */
     background: #acc161;
@@ -166,37 +175,29 @@ body {
     transition: ease-in-out color .15s;
   }
 
-  .about {
-    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image1.png) no-repeat;
-    background-repeat: no-repeat;
+  .template {
     align-items: center;
     padding: 150px 70px;
     max-width: 100%;
     max-height: 100%;
+    background-repeat: no-repeat;
+  }
+  .about {
+    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image1.png) no-repeat;
+    background-size: cover;
+
 
   }
 
   .coaching {
     background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image2.png) no-repeat;
-    background-repeat: no-repeat;
-    align-items: center;
-    /* width: 100%; */
-    /* height: 100%; */
-    padding: 150px 70px;
-    max-width: 100%;
-    max-height: 100%;
+    background-size: cover;
 
   }
 
   .get-in-touch {
     background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image3.png) no-repeat;
-    background-repeat: no-repeat;
-    align-items: center;
-    /* width: 100%; */
-    /* height: 100%; */
-    padding: 150px 70px;
-    max-width: 100%;
-    max-height: 100%;
+    background-size: cover;
 
   }
 
@@ -262,6 +263,7 @@ body {
   position: absolute;
   padding: 80px 0 20px 100px;
   font-family: 'Caveat', cursive;
+  /* font-family: 'Kumbh Sans', sans-serif; */
   font-weight: 700;
   font-size: 3rem;
   color: white;
@@ -269,12 +271,29 @@ body {
 
 #ourprog-intro button {
   position: absolute;
-  margin: 200px 0 0 100px;
+  display: block;
+  margin-left: 100px;
 }
 
-#ourprog-why {
-  padding: 20px 70px;
+#ourprog-intro .title {
+  padding: 60px 0 20px 100px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
+
+#ourprog-intro .btn {
+  background-color: black;
+  width: 250px;
+  color: white;
+
+}
+#ourprog-why {
+  padding: 50px 70px;
+}
+
+#ourprog-why ul {
+  list-style: none;
+}
+
 .intro-img {
   width: 50%;
   position: relative;
@@ -282,6 +301,11 @@ body {
   right: 0;
   float: right;
 }
+
+.card {
+  border: none;
+}
+
 
 /* OURPROG THIRD PAGE */
 
@@ -306,7 +330,7 @@ body {
     text-align: center;
   }
   .circle1 {
-    background: #deb3c3;
+    background: #ccecdf;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -317,7 +341,7 @@ body {
   }
 
   .circle2 {
-    background: #c5899f;
+    background: #c9e5d5;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -337,7 +361,9 @@ body {
 .form-control {
   height: 75px;
   padding: 0 40px;
+  
 }
+
 
 .main-page-dijit {
   width: 100%;
@@ -346,15 +372,17 @@ body {
 
 .form-label-group {
   margin: 10px 1.5px;
+  width: 100%;
 }
 
-/* .selectpicker {
-  padding: 15px 29px !important;
-  height: 60px !important;
-} */
 
-.bootstrap-select {
-  width: 100% !important;
+.selectpicker {
+  height: 10px !important;
+}
+
+.selectpicker option {
+  padding: 15px 29px !important;
+
 }
 
 .dropdown-toggle {
@@ -369,4 +397,83 @@ body {
 .home-form {
   padding: 30px 0;
   display: block;
+}
+
+.form-btn {
+  background-color: black;
+  height: 70px;
+}
+
+.form-submit {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+/* BLOG */
+.feed {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.blog-feed {
+  width: 100%;
+}
+
+
+/* MOBILE-VERSION */
+@media only screen and (max-width:768px) {
+  .nav-item {
+    margin: 0;
+    text-align: center;
+  }
+
+  #home-28 img {
+      margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+  }
+  
+  .text-content {
+    margin: 40px;
+    padding: 0;
+    display: block;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+
+  .my-image {
+    width: 250px;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .card {
+    margin: 40px 0;
+    border: none;
+  }
+
+  #home-types {
+    text-align: center;
+  }
+
+  .types {
+    padding: 0;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1180px){
+
 }
