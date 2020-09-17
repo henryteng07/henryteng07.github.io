@@ -509,6 +509,10 @@ html,body
     height: 100px;
   }
 
+  .home-form h2{
+    font-size: 1.5rem;
+  }
+
 
 }
 
