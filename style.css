@@ -381,12 +381,6 @@ html,body
   
 }
 
-
-.main-page-dijit {
-  width: 100%;
-  padding: 27px 40px;
-}
-
 .form-label-group {
   margin: 10px 1.5px;
   width: 100%;
@@ -505,6 +499,17 @@ html,body
   .types {
     padding: 0;
   }
+
+  .form-control {
+    height: 50px;
+    padding: 0 20px;
+  }
+
+  .user-message {
+    height: 100px;
+  }
+
+
 }
 
 
