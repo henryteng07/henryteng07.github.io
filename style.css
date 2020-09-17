@@ -481,7 +481,16 @@ html,body
   }
 
   #about-me {
-    padding: 20px 5%;
+    padding: 20px 2%;
+  }
+
+  #about-me p {
+    font-size: 0.9rem;
+  }
+
+  .text-content-h1 {
+    font-size: 1.6rem;
+    text-align: center;
   }
   #home-types {
     text-align: center;
