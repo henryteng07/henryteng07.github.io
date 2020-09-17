@@ -480,6 +480,9 @@ html,body
     border: none;
   }
 
+  #about-me {
+    padding: 20px 5%;
+  }
   #home-types {
     text-align: center;
   }
