@@ -481,16 +481,22 @@ html,body
   }
 
   #about-me {
-    padding: 20px 2%;
+    padding: 20px 1%;
+    margin: 0;
   }
 
   #about-me p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .text-content {
+    margin-top: 20px;;
   }
 
   .text-content-h1 {
     font-size: 1.6rem;
     text-align: center;
+    padding: 0;
   }
   #home-types {
     text-align: center;
