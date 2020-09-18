@@ -330,6 +330,7 @@ html,body
 
 .card {
   border: none;
+  padding: 0 30px;
 }
 
 
@@ -338,7 +339,7 @@ html,body
 #home-types {
     max-height: 600px;
     background-color: white;
-    padding: 5% 10%;
+    padding: 5% 8%;
     margin-bottom: 50px;
   }
 
@@ -378,7 +379,7 @@ html,body
 
 /* FORM */
 .form-signin {
-  padding: 0 9%;
+  padding: 0 5%;
   margin-top: 50px;
   display: block;
 }
