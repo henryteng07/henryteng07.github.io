@@ -16,7 +16,9 @@ html,body
   font-size: 50px;
   padding: 30px 40px 20px 20px;
 }
-
+.fab a {
+  color: black;
+}
 
   /*
    * Custom translucent site header
@@ -56,6 +58,7 @@ html,body
   .link {
       padding-top: 1.6rem !important;
       margin: 0 50px;
+      font-style: bold;
   }
 
   .nav-item {
@@ -96,8 +99,9 @@ html,body
 }
 
 .title {
-  font-family: 'C_Cake';
-  font-size: 4.5rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  letter-spacing: 2px;
   color: white;
   /* border-bottom: 5px solid #cdecda; */
   display: inline-block;
@@ -274,6 +278,9 @@ html,body
     background-color: #cdecda;
     position: relative;
     overflow: hidden;
+    background-image: url(images/ourprog-into-img.png);
+    background-size: cover;
+    height: 320px;
     
 }
 
@@ -287,10 +294,11 @@ html,body
   color: white;
 }
 
-#ourprog-intro button {
+.ourprog-button {
   position: absolute;
   display: block;
   margin-left: 100px;
+  color: black;
 }
 
 #ourprog-intro .title {
@@ -305,7 +313,7 @@ html,body
 
 }
 #ourprog-why {
-  padding: 50px 70px;
+  padding: 50px 100px;
 }
 
 #ourprog-why ul {
