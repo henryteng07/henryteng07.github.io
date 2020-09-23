@@ -10,6 +10,7 @@ html,body
 .footer {
   width: 100%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .fab {
@@ -82,7 +83,7 @@ html,body
   }
 
   .nav-item {
-    margin: 0 50px;
+    margin: 0 40px;
   }
   /*
    * Extra utilities
@@ -227,6 +228,48 @@ html,body
 
   }
 
+  /* SUPPORT PAGE */
+
+  .support-content {
+    padding: 20px 10% 40px;
+  }
+
+  .support-content p {
+    font-size: 1.2rem;
+  }
+
+  .muted-background {
+    background-color: #eacfc0;
+    margin: 0 10px;
+    padding: 20px;
+    height: fit-content;
+  }
+
+  /* Carousel base class */
+.carousel {
+  /* margin-bottom: 4rem; */
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 800px;
+  background-color: #e0bda8;
+  padding: 50px 0;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
   @media (min-width: 768px) {
     .flex-md-equal > * {
       -ms-flex: 1;
@@ -295,11 +338,11 @@ html,body
 #ourprog-intro {
    max-height: 400px;
     /* background-color: #AEDECA; */
-    background-color: #cdecda;
+    /* background-color: #cdecda; */
     position: relative;
     overflow: hidden;
-    background-image: url(images/ourprog-into-img.png);
-    background-size: cover;
+    /* background-image: url(images/ourprog-into-img.png); */
+    /* background-size: cover; */
     height: 320px;
     
 }
@@ -326,18 +369,21 @@ html,body
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-#ourprog-intro .btn {
+.btn-edit {
   background-color: black;
-  width: 250px;
+  width: 20%;
+  height: 75px;
   color: white;
-
+  margin: auto;
+  display: block;
+  margin-bottom: 70px;
 }
 #ourprog-why {
   padding: 50px 100px;
 }
 
 #ourprog-why ul {
-  list-style: none;
+  list-style-type: circle;
 }
 
 .intro-img {
@@ -357,9 +403,8 @@ html,body
 /* OURPROG THIRD PAGE */
 
 #home-types {
-    max-height: 600px;
     background-color: white;
-    padding: 5% 8%;
+    padding: 5% 8% 0%;
     margin-bottom: 50px;
   }
 
@@ -549,6 +594,12 @@ html,body
   }
 
 
+}
+
+@media (min-width: 992px) {
+  .muted-background {
+    max-width: 31%;
+  }
 }
 
 
