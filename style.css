@@ -7,6 +7,11 @@ html,body
     overflow-x: hidden; 
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+
+}
 .footer {
   width: 100%;
   text-align: center;
@@ -248,7 +253,7 @@ html,body
 
   /* Carousel base class */
 .carousel {
-  /* margin-bottom: 4rem; */
+  margin-bottom: 50px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -325,7 +330,6 @@ html,body
   margin: 20px 0;
 }
 .text-content p {
-  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -402,6 +406,10 @@ html,body
   padding: 50px 100px;
 }
 
+#ourprog-why h1 {
+  font-size: 3.5rem;
+}
+
 #ourprog-why ul {
   list-style-type: circle;
 }
@@ -414,11 +422,22 @@ html,body
   float: right;
 }
 
+.program {
+  text-align: center;
+  padding-bottom: 50px;
+}
 .card {
   border: none;
   padding: 0 30px;
 }
 
+.card0 {
+  background-color: black;
+  color: white;
+  margin: 0 30px;
+  padding: 20px;
+  height: 250px;
+}
 
 /* OURPROG THIRD PAGE */
 
@@ -619,6 +638,10 @@ html,body
 @media (min-width: 992px) {
   .muted-background {
     max-width: 31%;
+  }
+
+  .card0 {
+    flex: 0 0 28%;
   }
 }
 
