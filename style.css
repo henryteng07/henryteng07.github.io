@@ -12,6 +12,8 @@ p {
   font-size: 1.2rem;
 
 }
+
+
 .footer {
   width: 100%;
   text-align: center;
@@ -135,7 +137,12 @@ p {
 }
 
 .title-underline {
-    border-bottom: 5px solid #cdecda;
+    background-image: url(images/card-image.png);
+    background-size: cover;
+    background-position: 0 1.05em;
+    background-repeat: no-repeat;
+
+
 }
 
 .sub-title {
@@ -219,18 +226,18 @@ p {
     background-repeat: no-repeat;
   }
   .about {
-    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image1.png) no-repeat;
+    background-image: url(images/image12.png);
 
 
   }
 
   .coaching {
-    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image2.png) no-repeat;
+    background-image: url(images/image21.png);
 
   }
 
   .get-in-touch {
-    background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ),url(images/image3.png) no-repeat;
+    background-image: url(images/image9.png);
 
   }
 
@@ -248,7 +255,11 @@ p {
     background-color: #eacfc0;
     margin: 0 10px;
     padding: 20px;
-    height: fit-content;
+    height: 700px;
+  }
+  .muted-background p {
+    font-size: 1.1rem;
+
   }
 
   /* Carousel base class */
@@ -263,7 +274,7 @@ p {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 800px;
+  height: 820px;
   background-color: #e0bda8;
   padding: 50px 0;
 }
@@ -333,6 +344,11 @@ p {
   font-family: 'Montserrat', sans-serif;
 
 }
+
+.text-content a {
+  color: black;
+  text-decoration: underline;
+}
 /* .btn {
   margin-left: 40px;
   margin-top: 50px;
@@ -380,9 +396,11 @@ p {
 
 .btn-group-lg>.btn, .btn-lg {
   border-radius: 0;
+  font-weight: 300;
 }
+
 .btn-edit {
-  background-color: black;
+  background-color: #929292;
   width: 20%;
   height: 75px;
   color: white;
@@ -391,16 +409,20 @@ p {
   margin-bottom: 70px;
 }
 
+.btn-primary {
+  border-color: #929292;
+}
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: black;
-  border-color: black;
+  background-color: #929292;
+  border-color: #929292;
+
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: black;
-  border-color: black;
+  background-color: #929292;
+  border-color: #929292;
 }
 #ourprog-why {
   padding: 50px 100px;
@@ -432,12 +454,13 @@ p {
 }
 
 .card0 {
-  background-color: black;
+  background-image: url(images/card-image.png);
   color: white;
-  margin: 0 30px;
-  padding: 20px;
-  height: 250px;
+  margin: 0 15px;
+  padding: 20px 15px 0;
+  height: 260px;
 }
+
 
 /* OURPROG THIRD PAGE */
 
@@ -454,24 +477,17 @@ p {
   }
   .types {
     padding-bottom: 50px;
+    text-align: center;
   }
   .types h3 {
     text-align: center;
   }
-  .circle1 {
-    background: #e0bda8;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    margin: 0 auto 20px;
-  }
 
-  .circle2 {
-    background: #D9AA8C;
-    /* #D9AA8C */
+  .program h3 {
+    text-decoration: underline;
+  }
+  .circle1 {
+    background-image: url(images/card-image.png);
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -523,14 +539,14 @@ p {
 }
 
 .form-btn {
-  background-color: black;
+  background-color: #929292;
   height: 70px;
 }
 
 .form-submit {
   width: 100%;
   height: 70px;
-  background-color: black;
+  background-color: #929292;
 }
 
 /* BLOG */
@@ -548,8 +564,8 @@ p {
 
 .blog-heading {
   margin-top: 30px;
-  text-align: center;
   font-size: 2rem;
+  margin-left: 10%; 
 }
 
 
@@ -641,7 +657,7 @@ p {
   }
 
   .card0 {
-    flex: 0 0 28%;
+    flex: 0 0 30%;
   }
 }
 
