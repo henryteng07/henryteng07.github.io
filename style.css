@@ -244,7 +244,7 @@ p {
   /* SUPPORT PAGE */
 
   .support-content {
-    padding: 20px 10% 40px;
+    padding: 0 10% 40px;
   }
 
   .support-content p {
@@ -256,15 +256,24 @@ p {
     margin: 0 10px;
     padding: 20px;
     height: 700px;
+    position: relative;
   }
   .muted-background p {
     font-size: 1.1rem;
+  }
 
+  .muted-background img {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Carousel base class */
 .carousel {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -305,7 +314,6 @@ p {
 /* ABOUTME FIRST PAGE */
 #about-me {
   width: 100%;
-  margin-top: 10px;
   padding: 50px 10%;
 }
 .my-image {
@@ -425,11 +433,16 @@ p {
   border-color: #929292;
 }
 #ourprog-why {
-  padding: 50px 100px;
+  padding: 50px 10% 0;
 }
 
 #ourprog-why h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+
+#ourprog-why p {
+  margin-bottom: 0;
 }
 
 #ourprog-why ul {
@@ -455,7 +468,8 @@ p {
 
 .card0 {
   background-image: url(images/card-image.png);
-  color: white;
+  /* color: #696969; */
+  color: #534b4f;
   margin: 0 15px;
   padding: 20px 15px 0;
   height: 260px;
@@ -470,7 +484,7 @@ p {
     margin-bottom: 50px;
   }
 
-  #home-types h2 {
+  #home-types h1 {
     text-align: center;
     padding-bottom: 40px;
     font-size: 2.5rem;
@@ -498,7 +512,13 @@ p {
   }
 
 /* FORM */
-.form-signin {
+.form-sigin {
+  display: block;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+}
+
+.main-form-signin {
   padding: 0 5%;
   margin-top: 50px;
   display: block;
@@ -534,8 +554,9 @@ p {
   height: 150px;
 }
 
-.home-form {
+#home-form {
   display: block;
+  padding: 50px 10%;
 }
 
 .form-btn {
@@ -647,6 +668,10 @@ p {
   .home-form h2{
     font-size: 1.5rem;
   }
+
+  .form-control {
+    font-size: 5rem;
+}
 
 
 }

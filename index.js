@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const https = require("https");
 
-app.use(express.static(__dirname +"/public"));
+app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res) {
@@ -52,9 +52,11 @@ app.post("/", function(req, res) {
         response.on("data", function(data) {
 
             if (response.statusCode === 200) {
-                res.sendFile(__dirname+ "/success.html");
+                console.log("Success");
+                res.redirect("..");
             } else {
-                res.sendFile(__dirname+ "/failure.html");
+                // res.sendFile(__dirname+ "/failure.html");
+                console.log("Failure");
             }
             console.log(JSON.parse(data));
         })
@@ -63,6 +65,7 @@ app.post("/", function(req, res) {
     request.write(jsonData);
     request.end();
 })
+
 app.listen(3000, function() {
     console.log("Server is running on port 3000");
 })
