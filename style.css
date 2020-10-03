@@ -13,6 +13,9 @@ p {
 
 }
 
+select {
+  appearance: 20%;
+}
 
 .footer {
   width: 100%;
@@ -119,14 +122,6 @@ p {
       padding-top: 200px;
   }
 
-  @font-face {
-    font-family: 'C_Cake';
-    src: url('Beauty&Beast.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 .title {
   font-family: 'Bebas Neue', cursive;
   font-size: 5.5rem;
@@ -141,8 +136,6 @@ p {
     background-size: cover;
     background-position: 0 1.05em;
     background-repeat: no-repeat;
-
-
 }
 
 .sub-title {
@@ -150,15 +143,6 @@ p {
   font-size: 1.6rem;
   color: white;
   padding-top: 40px;
-}
-
-  .home-lady {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    /* display: inline-block; */
 }
 
 /* HOME SECOND PAGE */
@@ -228,7 +212,6 @@ p {
   .about {
     background-image: url(images/image12.png);
 
-
   }
 
   .coaching {
@@ -295,7 +278,6 @@ p {
   height: 32rem;
 }
 
-
   @media (min-width: 768px) {
     .flex-md-equal > * {
       -ms-flex: 1;
@@ -322,7 +304,6 @@ p {
   /* float: left; */
   display: block;
   margin-bottom: 20px;
-
 }
 
 .text-content {
@@ -536,20 +517,6 @@ p {
 }
 
 
-.selectpicker {
-  height: 10px !important;
-}
-
-.selectpicker option {
-  padding: 15px 29px !important;
-
-}
-
-.dropdown-toggle {
-  height: 75px;
-  padding: 25px 40px;
-}
-
 .user-message {
   height: 150px;
 }
@@ -571,6 +538,9 @@ p {
 }
 
 /* BLOG */
+#blog h1 {
+  font-size: 2.5rem;
+}
 .feed {
   max-width: 80%;
   display: block;
@@ -579,7 +549,7 @@ p {
   margin-top: 40px;
 }
 
-.blog-feed {
+#blog-feed {
   width: 100%;
 }
 
