@@ -55,6 +55,10 @@ select {
   /*
    * Custom translucent site header
    */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   
   .site-header-logo {
       width: 45px;
