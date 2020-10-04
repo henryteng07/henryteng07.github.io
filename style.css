@@ -13,9 +13,9 @@ p {
 
 }
 
-select {
+/* select {
   appearance: 20%;
-}
+} */
 
 .footer {
   width: 100%;
@@ -59,11 +59,10 @@ select {
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   .site-header-logo {
       width: 45px;
       display: inline-block;
-      margin-left: 20px;
   }
 
   .site-header {
@@ -135,10 +134,13 @@ select {
   display: inline-block;
 }
 
+.title .title-underline {
+  background-position: 0 1.12em;
+}
 .title-underline {
     background-image: url(images/card-image.png);
     background-size: cover;
-    background-position: 0 1.05em;
+    background-position: 0 1.02em;
     background-repeat: no-repeat;
 }
 
@@ -230,11 +232,15 @@ select {
 
   /* SUPPORT PAGE */
 
-  .support-content {
+  #support .title-underline {
+      background-position: 0 1.1em;
+  }
+
+  #support-content {
     padding: 0 10% 40px;
   }
 
-  .support-content p {
+  #support-content p {
     font-size: 1.2rem;
   }
 
@@ -246,7 +252,13 @@ select {
     position: relative;
   }
   .muted-background p {
+    font-size: 1.0rem;
+    margin-top: 3px;
+  }
+
+  .muted-background u {
     font-size: 1.1rem;
+    font-weight: bold;
   }
 
   .muted-background img {
@@ -297,10 +309,17 @@ select {
   
   .overflow-hidden { overflow: hidden; }
 
+  .carousel-inner img {
+    height: 150px;
+  }
 /* ABOUTME FIRST PAGE */
 #about-me {
   width: 100%;
   padding: 50px 10%;
+}
+
+#about-me .title-underline {
+  background-position:0  1.1em !important;
 }
 .my-image {
   width: 100%;
@@ -434,6 +453,10 @@ select {
   list-style-type: circle;
 }
 
+.ourprog {
+  background-position: 0 1.09em !important;
+}
+
 .intro-img {
   width: 50%;
   position: relative;
@@ -525,11 +548,22 @@ select {
   height: 150px;
 }
 
+.contact {
+  background-position: 0 1.02em !important;
+}
+
 #home-form {
   display: block;
   padding: 50px 10%;
 }
 
+#home-form h2{
+  font-size: 1.5rem;
+}
+
+#home-form .title-underline {
+  background-position: 0 1.08em;
+}
 .form-btn {
   background-color: #929292;
   height: 70px;
@@ -563,6 +597,12 @@ select {
   margin-left: 10%; 
 }
 
+#blog .title-underline {
+  background-image: url(images/card-image.png);
+  background-size: cover;
+  background-position: 0 1.02em;
+  background-repeat: no-repeat;
+}
 
 /* MOBILE-VERSION */
 @media only screen and (max-width:768px) {
@@ -639,9 +679,10 @@ select {
     height: 100px;
   }
 
-  .home-form h2{
-    font-size: 1.5rem;
+  #contact-form .title-underline {
+    background-position: 0 1.02em !important;
   }
+
 
   .form-control {
     font-size: 5rem;
