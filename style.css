@@ -394,7 +394,7 @@ p {
   position: absolute;
   display: block;
   margin-left: 100px;
-  color: black;
+  color: white;
 }
 
 #ourprog-intro .title {
@@ -404,6 +404,10 @@ p {
 
 .btn {
   border-radius: 0;
+}
+
+.btn:hover {
+  color: white;
 }
 
 .btn-group-lg>.btn, .btn-lg {
