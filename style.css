@@ -13,6 +13,9 @@ p {
 
 }
 
+a:hover {
+  color: white;
+}
 /* select {
   appearance: 20%;
 } */
@@ -408,6 +411,7 @@ p {
 
 .btn:hover {
   color: white;
+  border-color: white;
 }
 
 .btn-group-lg>.btn, .btn-lg {
