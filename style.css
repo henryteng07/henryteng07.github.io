@@ -507,6 +507,7 @@ p {
 
   .program h3 {
     text-decoration: underline;
+    font-size: 1.5rem;
   }
   .circle1 {
     background-image: url(images/card-image.png);
