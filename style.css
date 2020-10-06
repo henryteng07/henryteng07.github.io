@@ -697,7 +697,33 @@ a:hover {
     font-size: 5rem;
 }
 
+  /* .ourprog-button {
+    width: 200px;
+  } */
 
+  .btn-edit {
+    width: auto;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  
+  .navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #ourprog-why h1 {
+    font-size: 1.6rem;
+  }
+
+  #home-types h1 {
+    font-size: 1.6rem;
+  }
+
+  #blog h1 {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 992px) {
