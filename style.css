@@ -501,8 +501,8 @@ a:hover {
   }
 
   #home-types h1 {
-    text-align: center;
     padding-bottom: 40px;
+    margin-left: 20px;
     font-size: 2.5rem;
   }
   .types {
