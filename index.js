@@ -41,11 +41,11 @@ app.post("/", function(req, res) {
     }
 
     const jsonData = JSON.stringify(data);
-    const url = "https://us17.api.mailchimp.com/3.0/lists/e11263e79b"
+    const url = "https://us17.api.mailchimp.com/3.0/lists/aefc5ca841"
 
     const option = {
         method: "POST",
-        auth: "henry:615241a93cad7512aef6ea9e908be89f-us17"
+        auth: "sharon:2665ab7561f3f9ad5f8be5ed9a1474e1-us2"
     }
 
     const request = https.request(url, option, function(response){
@@ -72,7 +72,7 @@ app.listen(3000, function() {
 
 
 // api Key
-// a0c96c8fa4491dba221c29969accaa5c-us17
+// 2665ab7561f3f9ad5f8be5ed9a1474e1-us2
 
 //audience id
-// e11263e79b
+//aefc5ca841
