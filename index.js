@@ -53,7 +53,7 @@ app.post("/", function(req, res) {
 
             if (response.statusCode === 200) {
                 console.log("Success");
-                res.send('<script>alert("Thanks! Sharon will be in touch soon.")</script>')
+                res.redirect("/success.html")
 
             } else {
                 // res.sendFile(__dirname+ "/failure.html");
