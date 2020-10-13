@@ -358,9 +358,12 @@ a:hover {
 }
 .text-content p {
   font-family: 'Montserrat', sans-serif;
-
 }
 
+.success {
+  font-family: 'Montserrat', sans-serif;
+
+}
 .text-content a {
   color: black;
   text-decoration: underline;
