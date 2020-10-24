@@ -552,8 +552,13 @@ a:hover {
 }
 
 .form-label-group {
-  margin: 10px 1.5px;
-  width: 100%;
+  /* margin: 10px 0; */
+  width: 100% !important;
+  height: 75px;
+  padding-left: 40px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  color: #495057;
 }
 
 
@@ -567,7 +572,7 @@ a:hover {
 
 #home-form {
   display: block;
-  padding: 50px 10%;
+  padding: 50px 10%; 
 }
 
 #home-form h2{
@@ -580,6 +585,13 @@ a:hover {
 .form-btn {
   background-color: #929292;
   height: 70px;
+  width: 100%;
+  border-color: #929292;
+  border-style: solid;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 300;
 }
 
 .form-submit {
@@ -705,6 +717,7 @@ a:hover {
     height: 100px;
   }
 
+
   #contact-form .title-underline {
     background-position: 0 1.02em !important;
   }
@@ -772,4 +785,28 @@ a:hover {
 
 @media screen and (min-width: 769px) and (max-width: 1180px){
 
+}
+
+
+/* form */
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+.validate {
+  padding: 0 5%;
+}
+.mc-field-group {
+  margin: 10px 1.5px;
+}
+
+#contact-form {
+  padding: 50px 5%;
+  display: block;
+}
+
+#contact-form h2 {
+  font-size: 1.5rem;
 }
